@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rupnew" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gz9-EB-far">
+                                <rect key="frame" x="28" y="509" width="62" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="0JW-3w-rzA"/>
+                                    <constraint firstAttribute="height" constant="58" id="aEs-0X-82u"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wav" translatesAutoresizingMaskIntoConstraints="NO" id="Txx-uO-jn8">
+                                <rect key="frame" x="92" y="509" width="62" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="SSL-ys-sTk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midi" translatesAutoresizingMaskIntoConstraints="NO" id="FJd-PR-vVx">
+                                <rect key="frame" x="156" y="509" width="62" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qI6-2G-7Lz">
+                                <rect key="frame" x="218" y="509" width="62" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="ifK-br-Vye"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="08_settings" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-lv-y0S">
+                                <rect key="frame" x="65" y="165" width="240" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-au-28L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="0.5860445205479452" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-2P-M6f">
+                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="0.5860445205" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZSd-BO-5XL"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bmp" translatesAutoresizingMaskIntoConstraints="NO" id="e9W-Ea-9cL">
+                                <rect key="frame" x="282" y="509" width="62" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6O5-2P-M6f" secondAttribute="bottom" id="0K4-jQ-CKx"/>
+                            <constraint firstItem="aTQ-au-28L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="27Q-sP-2kE"/>
+                            <constraint firstItem="aTQ-au-28L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NYv-kP-XIG"/>
+                            <constraint firstAttribute="trailing" secondItem="aTQ-au-28L" secondAttribute="trailing" id="PSk-EC-jnu"/>
+                            <constraint firstAttribute="trailing" secondItem="6O5-2P-M6f" secondAttribute="trailing" id="YFF-yv-zP2"/>
+                            <constraint firstItem="aTQ-au-28L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ivm-eA-UwV"/>
+                            <constraint firstAttribute="trailing" secondItem="aTQ-au-28L" secondAttribute="trailing" id="lUS-wo-fxX"/>
+                            <constraint firstItem="aTQ-au-28L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n6p-Xi-eUd"/>
+                            <constraint firstItem="6O5-2P-M6f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vIg-vf-lkP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="08_settings" width="128" height="128"/>
+        <image name="bmp" width="256" height="256"/>
+        <image name="jpeg" width="256" height="256"/>
+        <image name="midi" width="256" height="256"/>
+        <image name="mpeg" width="256" height="256"/>
+        <image name="wav" width="256" height="256"/>
+    </resources>
 </document>
